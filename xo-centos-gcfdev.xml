@@ -1,0 +1,18 @@
+<rspec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:s="http://www.protogeni.net/resources/rspec/ext/shared-vlan/1"
+       xmlns="http://www.geni.net/resources/rspec/3" type="request"
+       xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd http://www.protogeni.net/resources/rspec/ext/shared-vlan/1 http://www.protogeni.net/resources/rspec/ext/shared-vlan/1/request.xsd">
+  <node client_id="geni1">
+    <sliver_type name="xo.large">
+      <disk_image
+          name="http://www.gpolab.bbn.com/experiment-support/images/tom/CentOS-6.5/CentOS-6.5.xml"
+          version="196a710ccc8a792ca6f7ffe6e48a9dbf5f6ac7b7"/>
+    </sliver_type>
+    <services>
+      <install
+          install_path="/tmp"
+          url="http://www.gpolab.bbn.com/experiment-support/gposw/aa/install.sh"/>
+      <execute command="/bin/sh /tmp/install.sh" shell="sh"/>
+    </services>
+  </node>
+</rspec>
