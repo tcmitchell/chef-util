@@ -11,7 +11,7 @@
     <services>
       <install
           install_path="/tmp"
-          url="http://www.gpolab.bbn.com/experiment-support/gposw/aa/install.sh"/>
+          url="https://raw.githubusercontent.com/tcmitchell/chef-util/master/install.sh"/>
       <execute command="/bin/sh /tmp/install.sh" shell="sh"/>
     </services>
   </node>
