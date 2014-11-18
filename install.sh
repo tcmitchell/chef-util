@@ -46,10 +46,10 @@ else
   exit 1
 fi
 
-rm -rf chef-repo
+rm -rf cookbooks
 tar xzf chef-repo.tar.gz
 rm chef-repo.tar.gz
 #mv chef-repo-master chef-repo
 
-cd chef-repo && chef-client -z -r "${@}" && cd ..
-rm -rf chef-repo
+chef-client -z -r "${@}" && cd ..
+rm -rf cookbooks
