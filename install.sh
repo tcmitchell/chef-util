@@ -51,5 +51,5 @@ tar xzf chef-repo.tar.gz
 rm chef-repo.tar.gz
 #mv chef-repo-master chef-repo
 
-cd chef-repo && chef-client -z -r git,emacs,gcfdev && cd ..
+cd chef-repo && chef-client -z -r "${@}" && cd ..
 rm -rf chef-repo
