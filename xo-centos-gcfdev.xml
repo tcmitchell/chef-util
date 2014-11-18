@@ -12,7 +12,7 @@
       <install
           install_path="/tmp"
           url="https://raw.githubusercontent.com/tcmitchell/chef-util/master/install.sh"/>
-      <execute command="/bin/sh /tmp/install.sh git,emacs,gcfdev" shell="sh"/>
+      <execute command="/bin/sh /tmp/install.sh geni-authz" shell="sh"/>
     </services>
   </node>
 </rspec>
